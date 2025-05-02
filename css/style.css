@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body,html
+{
+    height: 100%;
+    width: 100%;  
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://imgs.search.brave.com/KIHDkVwanuRShoglpuql2pzZ2CoH_jwQVWlbxHlxc7Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTQ0/NzE0OTUyL3Bob3Rv/L2phbWEtbWFzamlk/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1NdlB1TVRadV9O/MEJ4Vk1FRkl0bDJ0/S1NpcEVFNDlUTkRa/YjhwRnB0WXlRPQ);
+    background-size: cover;
+    background-position: center;    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.hero-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(90%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(90%);
+
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+        
+}
+.hero-text h1{
+    font-size: 2rem;
+    color:#000;
+    text-align: center;
+    margin: 0;
+}
+.hero-text p{
+    font-size: 1.2rem;
+    color:white;
+    text-align: center;
+    margin: 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    margin: 0 20px;
+    background-color:rgba(255, 255, 255, 0.397);
+    border-radius: 20px;
+    
+}
+.form-container h2
+{
+    text-transform:capitalize; ;
+    color:blueviolet;
+    text-align: center;
+    margin: 0;
+
+}
+.form-container input, select, button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.159);
+    color: #0f011285;
+    text-transform: capitalize;
+
+}
+.form-container input:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    background-color:transparent;
+    color: blueviolet;
+}
+input[type="tel"]:focus::placeholder{
+    
+    content: "+91";
+    color: blueviolet;
+    font-size: 1rem;
+    margin-right: 5px;
+
+    
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #5a2d8c;
+}
+@media screen and (min-width: 1460px)
+{
+ .hero-section{
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    flex-direction: row;
+    
+    
+ }
+ .form-container{
+    width: 80%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 10px;
+    margin: 0 20px;
+    background-color:rgba(255, 255, 255, 0.559);
+    
+}
+
+    .hero-text{
+        width: 80%;
+        height: fit-content;
+        gap: 1rem;
+        /* padding: 10px; */
+        margin: 0 20px;
+        
+        
+    }
+    .hero-text h1{
+        font-size: 4rem;
+        text-align: left
+    }
+    .hero-text p{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .form-container h2
+    {
+        font-size: 2rem;
+        text-transform:capitalize; ;
+        color:blueviolet;
+        margin: 0;
+    
+    }
+
+}
+
+@media screen and (min-width: 786px) and (max-width: 1460px)
+{
+    .hero-section{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        /* justify-content: center; */
+        
+        
+     }
+     .form-container{
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 10px;
+        margin: 0 20px;
+        /* background-color:transparent; */
+        
+    }
+    .hero-text{
+        width: fit-content;
+        height: fit-content;
+        gap: 1rem;
+        /* padding: 10px; */
+        margin: 0 20px;
+        /* background-color:green; */
+        
+    }
+    .hero-text h1{
+        font-size: 3rem;
+        text-align: center
+    
+    }   
+    .hero-text p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .form-container h2
+    {
+        font-size: 3rem;
+        text-transform:capitalize; ;
+        color:blueviolet;
+        margin: 0;
+    
+    }
+}
