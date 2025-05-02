@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radhey Travels</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+  </head>
 
-<body>
-<section class="main">
-    <section class="page1">  
-        <nav></nav>
+  <body>
+    <section class="main">
+      <section class="page1">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Radhey Travels Logo" />
+            <h1>Radhey Travels</h1>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#book">Book Now</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
         <div class="hero-section">
-            <div class="hero-text">
-                <h1>Wherever You Go, We’re Already on the Way</h1>
-                <p>Your one-stop solution for all your needs.</p>
-            </div>
-            <div class="form-container">
-                <h2>Book Now</h2>
-                <form id="bookingForm">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <select name="Trip-type" id="tripType" required>
-                        <option value="" selected disabled>Trip Type</option>
-                        <option value="Round Trip">Round Trip</option>
-                        <option value="One-Way-Trip">One-Way-Trip</option>
-                    </select>
-                    <input type="tel" id="contactNumber" maxlength="10" placeholder="Contact Number" required>
-                    <select name="Car-type" id="carType" required>
-                        <option value="" selected disabled>Car Type</option>
-                        <option value="SUV">SUV</option>
-                        <option value="Sedan">Sedan</option>
-                    </select>
-                    <input type="text" id="pickupLocation" placeholder="Pickup Location" required>
-                    <input type="text" id="dropLocation" placeholder="Drop Location" required>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+          <div class="hero-text">
+            <h1>Wherever You Go, We're Already on the Way</h1>
+            <p>Your one-stop solution for all your needs.</p>
+          </div>
+          <div class="form-container">
+            <h2>Book Now</h2>
+            <form id="bookingForm">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <select name="Trip-type" id="tripType" required>
+                <option value="" selected disabled>Trip Type</option>
+                <option value="Round Trip">Round Trip</option>
+                <option value="One-Way-Trip">One-Way-Trip</option>
+              </select>
+              <input
+                type="tel"
+                id="contactNumber"
+                maxlength="10"
+                placeholder="Contact Number"
+                required
+              />
+              <select name="Car-type" id="carType" required>
+                <option value="" selected disabled>Car Type</option>
+                <option value="SUV">SUV</option>
+                <option value="Sedan">Sedan</option>
+              </select>
+              <input
+                type="text"
+                id="pickupLocation"
+                placeholder="Pickup Location"
+                required
+              />
+              <input
+                type="text"
+                id="dropLocation"
+                placeholder="Drop Location"
+                required
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
+      </section>
     </section>
-</section>
-<script src="Scripts/sendMessage.js"></script>
-</body>
-
+    <script src="Scripts/sendMessage.js"></script>
+  </body>
 </html>
