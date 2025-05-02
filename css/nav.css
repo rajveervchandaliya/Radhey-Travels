@@ -1,8 +1,10 @@
 .navbar {
-    background-color: blueviolet;
+    background-color: #fff;
+    color: black;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul {
@@ -19,11 +21,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
+    color: black;
+    /* border: 2px solid red; */
+    padding: 5px 20px;
+    border-radius: 30px;
 }
 
 nav ul li a:hover {
-    color: lightgray;
+    color: #fff;
+    background-color: #f9b542;
 }

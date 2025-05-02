@@ -22,11 +22,7 @@ body,html
     background-size: cover;
     background-position: center;    
 }
-nav{
-    height: 80px;
-    width: 100%;
-    background-color: blueviolet;
-}
+
 .hero-section{
     height: 100%;
     width: 100%;
@@ -97,15 +93,7 @@ nav{
     background-color:transparent;
     color: blueviolet;
 }
-input[type="tel"]:focus::placeholder{
-    
-    content: "+91";
-    color: blueviolet;
-    font-size: 1rem;
-    margin-right: 5px;
 
-    
-}
 button{
     background-color: blueviolet;
     color: white;
