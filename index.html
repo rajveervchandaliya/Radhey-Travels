@@ -20,9 +20,10 @@
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#book">Book Now</a></li>
+        <li><a href="#book">Cars</a></li>
+        <li><a href="#book">Booking</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">About Us</a></li>
       </ul>
     </header>
 
@@ -32,6 +33,40 @@
         <p>Your one-stop solution for all your needs.</p>
       </div>
     </section>
+
+    <section class="car-selection" id="carSelection">
+        <h2>Choose Your Car</h2>
+        <div class="filters">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="sedan">Sedan</button>
+          <button class="filter-button" data-filter="suv">SUV</button>
+          <button class="filter-button" data-filter="10-seater">10 Seaters</button>
+          <button class="filter-button" data-filter="14-seater">14+ Seaters</button>
+        </div>
+        <div class="car-cards">
+          <!-- Example Car Card -->
+          <div class="car-card" data-type="sedan">
+            <img src="./images/sedan.jpg" alt="Sedan Car">
+            <h3>Car Name: Honda City</h3>
+            <p>Type: Sedan</p>
+            <p>Cost: ₹12/km</p>
+            <p>Seats: 4</p>
+            <p>Features: AC, GPS, Music System</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img src="./images/suv.jpg" alt="SUV Car">
+            <h3>Car Name: Toyota Fortuner</h3>
+            <p>Type: SUV</p>
+            <p>Cost: ₹15/km</p>
+            <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <!-- Add more car cards as needed -->
+        </div>
+      </section>
+
     <div class="form-container">
         <h2>Book Now</h2>
         <form id="bookingForm">

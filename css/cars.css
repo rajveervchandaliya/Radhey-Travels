@@ -1,0 +1,84 @@
+.car-selection {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+}
+
+.car-selection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.filters {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-button {
+    background-color: #f9b542;
+    color: white;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+
+.car-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.car-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.car-card p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.car-card .book-now {
+    background-color: #f9b542;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.car-card .book-now:hover {
+    background-color: #5a2d8c;
+}
