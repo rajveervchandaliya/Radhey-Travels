@@ -28,7 +28,7 @@
 }
 
 .filter-button:hover {
-    background-color: #5a2d8c;
+    background-color: #d48800;
 }
 
 .car-cards {
@@ -85,5 +85,5 @@
 }
 
 .car-card .book-now:hover {
-    background-color: #5a2d8c;
+    background-color: #d48800;
 }

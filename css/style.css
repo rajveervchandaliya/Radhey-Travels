@@ -36,7 +36,6 @@
 
 .form-container {
   width: 100vw;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,4 +208,93 @@
   .form-container button {
     font-size: 0.9rem;
   }
+}
+
+/* FAQ Section */
+
+.faq {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    color: #f9b542;
+    margin-bottom: 1.5rem;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #f9b542;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 2s ease;
+}
+
+.accordion-header:hover {
+    background-color: #d48800;
+}
+
+.accordion-header::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+    transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    animation: slideDown 0.8s ease forwards;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+/* Active state for accordion */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
