@@ -6,6 +6,7 @@
     <title>Radhey Travels</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/cars.css" />
   </head>
 
   <body>
@@ -33,7 +34,7 @@
         <p>Your one-stop solution for all your needs.</p>
       </div>
     </section>
-
+    <br>
     <section class="car-selection" id="carSelection">
         <h2>Choose Your Car</h2>
         <div class="filters">
@@ -44,7 +45,6 @@
           <button class="filter-button" data-filter="14-seater">14+ Seaters</button>
         </div>
         <div class="car-cards">
-          <!-- Example Car Card -->
           <div class="car-card" data-type="sedan">
             <img src="./images/sedan.jpg" alt="Sedan Car">
             <h3>Car Name: Honda City</h3>
@@ -65,11 +65,11 @@
           </div>
           <!-- Add more car cards as needed -->
         </div>
-      </section>
-
+    </section>
+      <br>
     <div class="form-container">
         <h2>Book Now</h2>
-        <form id="bookingForm">
+        <form class="form-box" id="bookingForm">
           <input type="text" id="name" placeholder="Your Name" required />
           <select name="Trip-type" id="tripType" required>
             <option value="" selected disabled>Trip Type</option>
@@ -102,10 +102,10 @@
           />
           <button type="submit">Submit</button>
         </form>
-      </div>
+    </div>
       <script src="./Scripts/booking.js"></script>
-    <script src="./Scripts/navbar.js"></script>
-  </body>  </body>
+      <script src="./Scripts/navbar.js"></script>
+  </body> 
 
 
 </html></html>
