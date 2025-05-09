@@ -6,6 +6,7 @@
     <title>Radhey Travels</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/cars.css" />
   </head>
 
   <body>
@@ -20,9 +21,10 @@
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#book">Book Now</a></li>
+        <li><a href="#book">Cars</a></li>
+        <li><a href="#book">Booking</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">About Us</a></li>
       </ul>
     </header>
 
@@ -32,9 +34,42 @@
         <p>Your one-stop solution for all your needs.</p>
       </div>
     </section>
-    <div class="form-container">
+    <br>
+    <section class="car-selection" id="carSelection">
+        <h2>Choose Your Car</h2>
+        <div class="filters">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="sedan">Sedan</button>
+          <button class="filter-button" data-filter="suv">SUV</button>
+          <button class="filter-button" data-filter="10-seater">10 Seaters</button>
+          <button class="filter-button" data-filter="14-seater">14+ Seaters</button>
+        </div>
+        <div class="car-cards">
+          <div class="car-card" data-type="sedan">
+            <img src="./images/sedan.jpg" alt="Sedan Car">
+            <h3>Car Name: Honda City</h3>
+            <p>Type: Sedan</p>
+            <p>Cost: ₹12/km</p>
+            <p>Seats: 4</p>
+            <p>Features: AC, GPS, Music System</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img src="./images/suv.jpg" alt="SUV Car">
+            <h3>Car Name: Toyota Fortuner</h3>
+            <p>Type: SUV</p>
+            <p>Cost: ₹15/km</p>
+            <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <!-- Add more car cards as needed -->
+        </div>
+    </section>
+      <br>
+    <section class="form-container">
         <h2>Book Now</h2>
-        <form id="bookingForm">
+        <form class="form-box" id="bookingForm">
           <input type="text" id="name" placeholder="Your Name" required />
           <select name="Trip-type" id="tripType" required>
             <option value="" selected disabled>Trip Type</option>
@@ -67,7 +102,40 @@
           />
           <button type="submit">Submit</button>
         </form>
+    </section>
+    <br>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">What services does Radhey Travels offer?</button>
+          <div class="accordion-content">
+            <p>Radhey Travels offers car rentals, outstation trips, and local travel services with a variety of vehicles to choose from.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">How can I book a car?</button>
+          <div class="accordion-content">
+            <p>You can book a car by filling out the booking form on our website or contacting us directly via phone or WhatsApp.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">What payment methods are accepted?</button>
+          <div class="accordion-content">
+            <p>We accept cash, credit/debit cards, and online payment methods like UPI and net banking.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Can I cancel or modify my booking?</button>
+          <div class="accordion-content">
+            <p>Yes, you can cancel or modify your booking by contacting us at least 24 hours before the scheduled trip.</p>
+          </div>
+        </div>
       </div>
+    </section>
       <script src="./Scripts/booking.js"></script>
     <script src="./Scripts/navbar.js"></script>
-  
+  </body>  </body>
+
+
+</html></html>

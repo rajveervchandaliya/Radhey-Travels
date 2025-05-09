@@ -22,3 +22,23 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
 
     window.open(whatsappURL, '_blank');
 });
+
+
+
+
+const filterButtons = document.querySelectorAll('.filters button');
+const carCards = document.querySelectorAll('.car-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        carCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-type') === filter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
