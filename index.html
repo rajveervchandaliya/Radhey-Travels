@@ -52,8 +52,8 @@
         </div>
         <div class="car-cards">
           <div class="car-card" data-type="sedan">
-            <img src="./images/sedan.jpg" alt="Sedan Car" />
-            <h3>Car Name: Honda City</h3>
+            <img src="./Assets/images/dzire.avif" alt="Sedan Car" />
+            <h3>Car Name: Swift dzire</h3>
             <p>Type: Sedan</p>
             <p>Cost: ₹12/km</p>
             <p>Seats: 4</p>
@@ -61,11 +61,38 @@
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./images/suv.jpg" alt="SUV Car" />
-            <h3>Car Name: Toyota Fortuner</h3>
+            <img src="./Assets/images/innova-6-plus1-500x500.webp" alt="SUV Car" />
+            <h3>Car Name: Toyota innova</h3>
             <p>Type: SUV</p>
             <p>Cost: ₹15/km</p>
             <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img src="./Assets/images/2016-Toyota-Innova-Crysta-5.avif" alt="SUV Car" />
+            <h3>Car Name: Toyota innova crysta</h3>
+            <p>Type: SUV</p>
+            <p>Cost: ₹18/km</p>
+            <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img src="./Assets/images/Chevrolet-Tavera-Right-Front-Three-Quarter-49908_ol.webp" alt="SUV Car" />
+            <h3>Car Name: Chevrolet Tavera</h3>
+            <p>Type: SUV</p>
+            <p>Cost: ₹17/km</p>
+            <p>Seats: 9</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif" alt="SUV Car" />
+            <h3>Car Name: Maruti Suzuki Ertiga</h3>
+            <p>Type: MUV</p>
+            <p>Cost: ₹14/km</p>
+            <p>Seats: 6</p>
             <p>Features: AC, GPS, Music System, Sunroof</p>
             <button class="book-now">Book Now</button>
           </div>
@@ -125,11 +152,7 @@
         <h2>Book Now</h2>
         <form class="form-box" id="bookingForm">
           <input type="text" id="name" placeholder="Your Name" required />
-          <select name="Trip-type" id="tripType" required>
-            <option value="" selected disabled>Trip Type</option>
-            <option value="Round Trip">Round Trip</option>
-            <option value="One-Way-Trip">One-Way-Trip</option>
-          </select>
+      
           <input
             type="tel"
             id="contactNumber"
@@ -144,16 +167,11 @@
           </select>
           <input
             type="text"
-            id="pickupLocation"
-            placeholder="Pickup Location"
+            id="Destination"
+            placeholder="Destination"
             required
           />
-          <input
-            type="text"
-            id="dropLocation"
-            placeholder="Drop Location"
-            required
-          />
+         
           <button type="submit">Submit</button>
         </form>
       </section>
