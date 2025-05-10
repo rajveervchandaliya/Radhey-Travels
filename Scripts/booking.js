@@ -53,22 +53,39 @@ filterButtons.forEach(button => {
     });
 });
 
+// Populate the "Car Selection" dropdown with car names
+const carSelectionDropdown = document.getElementById('carSelection');
+carCards.forEach(card => {
+    const carName = card.querySelector('h3').textContent.split(': ')[1];
+    const option = document.createElement('option');
+    option.value = carName;
+    option.textContent = carName;
+    carSelectionDropdown.appendChild(option);
+});
+
 // Handle "Book Now" button clicks
 const bookNowButtons = document.querySelectorAll('.book-now');
 bookNowButtons.forEach(button => {
     button.addEventListener('click', (event) => {
         const carCard = event.target.closest('.car-card'); 
 
+        // Extract car type
         const carType = Array.from(carCard.querySelectorAll('p'))
             .find(p => p.textContent.startsWith('Type:'))
             .textContent.split(': ')[1];
 
-        // console.log(carType); 
+        // Extract car name
+        const carName = carCard.querySelector('h3').textContent.split(': ')[1];
 
+        // Pre-fill the car type in the form
         const carTypeInput = document.getElementById('carType');
         carTypeInput.value = carType; 
         carTypeInput.dispatchEvent(new Event('change')); 
 
+        // Pre-fill the car name in the "Car Selection" dropdown
+        carSelectionDropdown.value = carName;
+
+        // Scroll to the form section
         document.querySelector('.form-container').scrollIntoView({ behavior: 'smooth' });
     });
 });

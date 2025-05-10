@@ -37,7 +37,7 @@
         </div>
       </section>
       <br />
-      <section class="car-selection" id="carSelection">
+      <section class="car-selection" id="carSection">
         <h2>Choose Your Car</h2>
         <div class="filters">
           <button class="filter-button" data-filter="all">All</button>
@@ -149,10 +149,9 @@
       </section>
       <br />
       <section class="form-container">
-        <h2>Book Now</h2>
+        <h2>Book Now on WhatsApp</h2>
         <form class="form-box" id="bookingForm">
           <input type="text" id="name" placeholder="Your Name" required />
-      
           <input
             type="tel"
             id="contactNumber"
@@ -165,13 +164,21 @@
             <option value="SUV">SUV</option>
             <option value="Sedan">Sedan</option>
           </select>
+          <select name="Car-selection" id="carSelection" required>
+            <option value="" selected disabled>Select Car</option>
+           </select>
           <input
             type="text"
-            id="Destination"
-            placeholder="Destination"
+            id="pickupLocation"
+            placeholder="Pickup Location"
             required
           />
-         
+          <input
+            type="text"
+            id="dropLocation"
+            placeholder="Drop Location"
+            required
+          />
           <button type="submit">Submit</button>
         </form>
       </section>

@@ -128,11 +128,15 @@
 
 .form-container button {
   background-color: #f9b542;
+  align-self: center;
+  border-radius: 30px;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
+  padding: 10px 30px;
+  max-width: max-content;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -234,9 +238,21 @@
 }
 
 @media screen and (max-width: 768px) {
+  .page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .form-container {
-    padding: 1.5rem;
+    padding: 0;
     margin: 1rem;
+    width: 100%;
+    align-self: center;
+    border: 2px solid #f9b542;
+  }
+
+  .form-box{
+    width: 100%;
   }
 
   .form-container h2 {
@@ -246,6 +262,7 @@
   .form-container input,
   .form-container select,
   .form-container button {
+    width: 100%;
     font-size: 0.9rem;
   }
 }
