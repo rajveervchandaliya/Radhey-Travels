@@ -1,6 +1,7 @@
 .car-selection {
     padding: 2rem;
     background-color: #f9f9f9;
+    width: 60vw;
     text-align: center;
 }
 
@@ -92,4 +93,23 @@
 
 .car-card .book-now:hover {
     background-color: #d48800;
+}
+
+
+@media screen and (max-width: 768px) {
+    .car-selection {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .car-card {
+        width: 100%;
+        max-width: 300px;
+    }
 }
