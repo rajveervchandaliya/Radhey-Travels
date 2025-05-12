@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/cars.css" />
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
   </head>
 
   <body>
@@ -61,7 +61,10 @@
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./Assets/images/innova-6-plus1-500x500.webp" alt="SUV Car" />
+            <img
+              src="./Assets/images/innova-6-plus1-500x500.webp"
+              alt="SUV Car"
+            />
             <h3>Car Name: Toyota innova</h3>
             <p>Type: SUV</p>
             <p>Cost: ₹15/km</p>
@@ -70,7 +73,10 @@
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./Assets/images/2016-Toyota-Innova-Crysta-5.avif" alt="SUV Car" />
+            <img
+              src="./Assets/images/2016-Toyota-Innova-Crysta-5.avif"
+              alt="SUV Car"
+            />
             <h3>Car Name: Toyota innova crysta</h3>
             <p>Type: SUV</p>
             <p>Cost: ₹18/km</p>
@@ -79,7 +85,10 @@
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./Assets/images/Chevrolet-Tavera-Right-Front-Three-Quarter-49908_ol.webp" alt="SUV Car" />
+            <img
+              src="./Assets/images/Chevrolet-Tavera-Right-Front-Three-Quarter-49908_ol.webp"
+              alt="SUV Car"
+            />
             <h3>Car Name: Chevrolet Tavera</h3>
             <p>Type: SUV</p>
             <p>Cost: ₹17/km</p>
@@ -88,7 +97,10 @@
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif" alt="SUV Car" />
+            <img
+              src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif"
+              alt="SUV Car"
+            />
             <h3>Car Name: Maruti Suzuki Ertiga</h3>
             <p>Type: SUV</p>
             <p>Cost: ₹14/km</p>
@@ -164,9 +176,9 @@
             <option value="SUV">SUV</option>
             <option value="Sedan">Sedan</option>
           </select>
-          <select name="Car-selection" id="carSelection" required>
+          <select name="Car-selection" id="carSelection" hidden>
             <option value="" selected disabled>Select Car Type First</option>
-           </select>
+          </select>
           <input
             type="text"
             id="pickupLocation"
@@ -176,32 +188,29 @@
           <button type="submit">Submit</button>
         </form>
       </section>
-      
-    <section class="about">
+
+      <section class="about">
         <div class="aboutcards-container-1">
-            <div class="about-card">
-                <h3>Affordable rates</h3>
-                <p>Quality travel services at prices everyone can afford.</p>
-            </div>
-            <div class="about-card dark">
-                <h3>Experienced Drivers</h3>
-                <p>Skilled, professional drivers ensure safe, smooth journeys.</p>
-            </div>
+          <div class="about-card">
+            <h3>Affordable rates</h3>
+            <p>Quality travel services at prices everyone can afford.</p>
+          </div>
+          <div class="about-card dark">
+            <h3>Experienced Drivers</h3>
+            <p>Skilled, professional drivers ensure safe, smooth journeys.</p>
+          </div>
         </div>
         <div class="aboutcards-container-2">
-            <div class="about-card">
-                <h3>On Time Services</h3>
-                <p>Reliable pickups and drop-offs, always on schedule.</p>
-            </div>
-            <div class="about-card dark">
-                <h3>Live GPS Tracking</h3>
-                <p>Track your ride live for safety and convenience.</p>
-            </div>
+          <div class="about-card">
+            <h3>On Time Services</h3>
+            <p>Reliable pickups and drop-offs, always on schedule.</p>
+          </div>
+          <div class="about-card dark">
+            <h3>Live GPS Tracking</h3>
+            <p>Track your ride live for safety and convenience.</p>
+          </div>
         </div>
-        
-       
-    </section>
-
+      </section>
     </div>
     <script src="./Scripts/booking.js"></script>
     <script src="./Scripts/navbar.js"></script>
