@@ -19,7 +19,7 @@
 }
 
 .filter-button {
-    background-color: #f9b542;
+    background-color:crimson;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -81,7 +81,7 @@
 }
 
 .car-card .book-now {
-    background-color: #f9b542;
+    background-color:crimson;
     color: white;
     border: none;
     padding: 0.5rem 1rem;

@@ -1,0 +1,99 @@
+@font-face {
+            font-family: 'MyFont';
+            src: url(/Assets/font/BebasNeue-Regular.ttf) format('truetype');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+#map {
+            height: 50vh;
+            width: 100%;
+        }
+        #map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 20px;
+        }
+        .abt-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 2%;
+            gap: 2rem;
+            height: 100vh;
+        }
+        #address  {
+            /* padding: 0 1rem; */
+    
+        }
+        #address p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        #address h3{
+            margin: 10px 0;
+            color: #333;
+        }
+        .part1{
+            height: 100%;
+            width: 100%;
+            /* text-align: center; */
+            padding: 0 1%;
+            /* background-color: aquamarine; */
+            /* border-left: #333 solid 6px; */
+            
+        }
+         .part2 {
+            height: 100%;
+            width: 100%;
+            padding: 0 1%;
+            /* background-color: aquamarine; */
+            /* border-left: #333 solid 6px; */
+            
+        }
+        .part1 > h3{
+            font-size: 4rem;
+            color:crimson;
+            font-family: 'MyFont';
+        }
+        .part1 p{
+            font-size: 1rem;
+            text-align: justify;
+            /* width: 90%; */
+            /* line-height: 1.5; */
+        }
+
+    
+        @media (min-width: 900px) {
+            #map {
+                width: 100%;  
+                height: 50%;
+            }
+            .abt-container {
+                padding: 2% 2%;
+                flex-direction: row;
+                gap: 1rem;
+                /* margin-left: 50%; */
+                /* align-items: flex-end; */
+                /* display: flex; */
+                /* background-color: aqua; */
+            }
+            .part1{
+                padding:0 1%;
+                width: 50%;
+                text-align: left;
+            }
+            .part1 p{
+                font-size: 1.2rem;
+            }
+            .part2{
+                 padding:0 1%;
+                 width: 50%;
+                /* flex-direction: row; */
+                gap: 1rem;
+                /* padding: 2% 1%; */
+            }
+        }
