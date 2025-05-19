@@ -82,12 +82,21 @@
     .navbar .nav-links.active {
         display: flex;
         z-index: 5;
-        background: transparent;
-        backdrop-filter: blur(30px);
+        background-color: white;
+        /* backdrop-filter: blur(30px); */
     }
 
     .navbar .nav-links li {
-        text-align: center;
-        padding: 1rem 0;
+        text-align: left;
+        border-bottom: 3px solid black;
+        padding-bottom: .5rem ;
+        padding-left: 0;
+        margin: 0 1.2rem;
+    }
+
+    .navbar .nav-links li a {
+        padding: 1rem 2px;
+        color:crimson;
+        font-size: 1.5rem;
     }
 }
