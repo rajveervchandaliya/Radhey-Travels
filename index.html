@@ -24,8 +24,8 @@
         </div>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
-          <li><a href="#book">Cars</a></li>
-          <li><a href="#book">Booking</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#form">Booking</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#about">About Us</a></li>
         </ul>
@@ -36,36 +36,37 @@
           <h1>Wherever You Go, We're Already on the Way</h1>
           <p>Your one-stop solution for all your needs.</p>
         </div>
+        <div class="form-container">
+          <h2>Book Now on WhatsApp</h2>
+          <form class="form-box" id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input
+              type="tel"
+              id="contactNumber"
+              maxlength="10"
+              placeholder="Contact Number"
+              required
+            />
+            <input
+              type="text"
+              id="pickupLocation"
+              placeholder="Destination"
+              required
+            />
+            <select name="Car-type" id="carType" required>
+              <option value="" selected disabled>Car Type</option>
+              <option value="SUV">SUV</option>
+              <option value="Sedan">Sedan</option>
+            </select>
+            <select name="Car-selection" id="carSelection" hidden>
+              <option value="" selected disabled>Select Car Type First</option>
+            </select>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </section>
       <br />
-      <section class="form-container">
-        <h2>Book Now on WhatsApp</h2>
-        <form class="form-box" id="bookingForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input
-            type="tel"
-            id="contactNumber"
-            maxlength="10"
-            placeholder="Contact Number"
-            required
-          />
-          <input
-            type="text"
-            id="pickupLocation"
-            placeholder="Destination"
-            required
-          />
-          <select name="Car-type" id="carType" required>
-            <option value="" selected disabled>Car Type</option>
-            <option value="SUV">SUV</option>
-            <option value="Sedan">Sedan</option>
-          </select>
-          <select name="Car-selection" id="carSelection" hidden>
-            <option value="" selected disabled>Select Car Type First</option>
-          </select>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+
       <br />
       <section class="car-selection" id="carSection">
         <h2>Choose Your Car</h2>
