@@ -77,26 +77,17 @@
         background-color: white;
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid gray;
     }
 
     .navbar .nav-links.active {
         display: flex;
         z-index: 5;
-        background-color: white;
-        /* backdrop-filter: blur(30px); */
+        background: transparent;
+        backdrop-filter: blur(30px);
     }
-
     .navbar .nav-links li {
-        text-align: left;
-        border-bottom: 3px solid black;
-        padding-bottom: .5rem ;
-        padding-left: 0;
-        margin: 0 1.2rem;
-    }
-
-    .navbar .nav-links li a {
-        padding: 1rem 2px;
-        color:crimson;
-        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem 0;
     }
 }
