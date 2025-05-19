@@ -2,12 +2,6 @@
   font-family: "MyFont";
   src: url(/Assets/font/BebasNeue-Regular.woff2) format("truetype");
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 .map {
   height: 50vh; /* Ensure the map has a fixed height */
   width: 100%;
