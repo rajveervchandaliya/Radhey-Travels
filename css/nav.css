@@ -5,7 +5,12 @@
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-    position: relative;   /* for mobile */
+    position: fixed; /* Change from relative to fixed */
+    top: 0; /* Ensure it stays at the top */
+    left: 0;
+    width: 100%; /* Make it span the full width */
+    z-index: 10; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
 .navbar .logo {

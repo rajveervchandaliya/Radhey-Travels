@@ -38,6 +38,35 @@
         </div>
       </section>
       <br />
+      <section class="form-container">
+        <h2>Book Now on WhatsApp</h2>
+        <form class="form-box" id="bookingForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input
+            type="tel"
+            id="contactNumber"
+            maxlength="10"
+            placeholder="Contact Number"
+            required
+          />
+          <input
+            type="text"
+            id="pickupLocation"
+            placeholder="Destination"
+            required
+          />
+          <select name="Car-type" id="carType" required>
+            <option value="" selected disabled>Car Type</option>
+            <option value="SUV">SUV</option>
+            <option value="Sedan">Sedan</option>
+          </select>
+          <select name="Car-selection" id="carSelection" hidden>
+            <option value="" selected disabled>Select Car Type First</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <br>
       <section class="car-selection" id="carSection">
         <h2>Choose Your Car</h2>
         <div class="filters">
@@ -202,34 +231,7 @@
         </div>
       </section>
       <br />
-      <section class="form-container">
-        <h2>Book Now on WhatsApp</h2>
-        <form class="form-box" id="bookingForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input
-            type="tel"
-            id="contactNumber"
-            maxlength="10"
-            placeholder="Contact Number"
-            required
-          />
-          <select name="Car-type" id="carType" required>
-            <option value="" selected disabled>Car Type</option>
-            <option value="SUV">SUV</option>
-            <option value="Sedan">Sedan</option>
-          </select>
-          <select name="Car-selection" id="carSelection" hidden>
-            <option value="" selected disabled>Select Car Type First</option>
-          </select>
-          <input
-            type="text"
-            id="pickupLocation"
-            placeholder="Destination"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+      
       
     <section class="abt-container">
         
