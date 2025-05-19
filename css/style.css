@@ -330,17 +330,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 98vw;
   }
   .hero-section {
     flex-direction: column;
     height: fit-content;
     padding: 2rem;
     gap: 1rem;
+    width: 100vw;
   }
   .form-container {
     padding: 0;
     margin: 1rem;
-    width: 100vw;
+    min-width: 95vw;
     align-self: center;
     border: 2px solidcrimson;
   }
