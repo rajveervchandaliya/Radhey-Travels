@@ -125,3 +125,20 @@
     }
    
  }
+
+.about {
+  background-color: var(--background-color);
+}
+
+.about-card {
+  background-color: var(--white-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.about-card h3 {
+  color: var(--primary-color);
+}
+
+.about-card p {
+  color: var(--muted-text-color);
+}

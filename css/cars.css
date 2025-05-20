@@ -19,7 +19,7 @@
 }
 
 .filter-button {
-    background-color:crimson;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -29,7 +29,7 @@
 }
 
 .filter-button:hover {
-    background-color: #d48800;
+    background-color: var(--secondary-color);
 }
 
 .car-cards {
@@ -42,9 +42,9 @@
 }
 
 .car-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+  background-color: var(--white-color);
+  border: 1px solid var(--shadow-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
     width: 300px;
     padding: 1rem;
     text-align: left;
@@ -81,8 +81,8 @@
 }
 
 .car-card .book-now {
-    background-color:crimson;
-    color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
     border: none;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
@@ -92,10 +92,11 @@
 }
 
 .car-card .book-now:hover {
-    background-color: #d48800;
+  background-color: var(--secondary-color);
 }
 
 .car-card .price {
+  color: var(--secondary-color);
   font-size: 1rem; /* Slightly larger font size */
   font-weight: bold; /* Make the text bold */
   margin-top: 0.5rem; /* Add spacing above the price */
