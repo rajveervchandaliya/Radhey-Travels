@@ -64,7 +64,8 @@ function updateCarSelectionDropdown(selectedType) {
     carCards.forEach(card => {
         const carType = card.getAttribute('data-type');
         const carName = card.querySelector('h3').textContent.split(': ')[1];
-
+        console.log(selectedType, "==", carType);
+        
         if (selectedType.toLowerCase() === carType.toLowerCase()) {
             const option = document.createElement('option');
             option.value = carName;
