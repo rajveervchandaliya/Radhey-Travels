@@ -327,6 +327,9 @@
 
   .form-box {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .form-container h2 {
@@ -336,7 +339,7 @@
   .form-container input,
   .form-container select,
   .form-container button {
-    width: 100%;
+    width: 90vw;
     font-size: 0.9rem;
   }
 }
