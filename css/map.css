@@ -1,6 +1,8 @@
 @font-face {
   font-family: "MyFont";
-  src: url(/Assets/font/BebasNeue-Regular.woff2) format("truetype");
+  src: url("../Assets/font/BebasNeue-Regular.woff2") format("woff2"),
+    url("../Assets/font/BebasNeue-Regular.woff") format("woff"),
+    url("../Assets/font/BebasNeue-Regular.ttf") format("truetype");
 }
 .map {
   height: 50vh; /* Ensure the map has a fixed height */
@@ -27,7 +29,8 @@
   margin: 10px 0;
   color: #333;
 }
-.part1, .part2 {
+.part1,
+.part2 {
   width: 100%; /* Ensure both parts take full width in column layout */
 }
 .part1 {
@@ -37,8 +40,8 @@
   /* border-left: #333 solid 6px; */
 }
 .part2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   padding: 0 1%;
   /* background-color: aquamarine; */
   /* border-left: #333 solid 6px; */
@@ -60,7 +63,8 @@
     gap: 2rem; /* Adjust gap for better spacing */
   }
 
-  .part1, .part2 {
+  .part1,
+  .part2 {
     width: 50%; /* Split the container into two equal parts */
   }
 
