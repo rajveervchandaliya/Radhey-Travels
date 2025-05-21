@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/map.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
   </head>
 
   <body>
@@ -29,6 +33,7 @@
           <li><a href="#form">Booking</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#about">About Us</a></li>
+
         </ul>
       </header>
 
@@ -36,10 +41,13 @@
         <div class="hero-content">
           <h1>Wherever You Go,<br> We're Already  on the Way</h1>
           <p>Your one-stop solution for all your needs.</p>
-          <button class="book-now-btn"><a href="#form" class="btn">Book Now</a></button>
+          <div class="hero-btns">
+            <button class="book-now-btn"><a href="#form" class="btn"><i class="ri-phone-fill"></i> Book by call</a></button>
+            <button class="book-now-btn"><a href="#form" class="btn"><i class="ri-whatsapp-line"></i> whatsapp us</a></button>
+          </div>
         </div>
          <div class="form-container" id="form">
-          <h2>Book Now on WhatsApp</h2>
+          <h2>contact us</h2>
           <form class="form-box" id="bookingForm">
             <input type="text" id="name" placeholder="Your Name" required />
             <input
