@@ -48,7 +48,7 @@
 }
 .part1 > h3 {
   font-size: 2.5rem; /* Adjust font size for better readability */
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: "MyFont";
 }
 .part1 p {

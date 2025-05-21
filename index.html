@@ -36,8 +36,9 @@
         <div class="hero-content">
           <h1>Wherever You Go,<br> We're Already  on the Way</h1>
           <p>Your one-stop solution for all your needs.</p>
+          <button class="book-now-btn"><a href="#form" class="btn">Book Now</a></button>
         </div>
-        <div class="form-container" id="form">
+         <div class="form-container" id="form">
           <h2>Book Now on WhatsApp</h2>
           <form class="form-box" id="bookingForm">
             <input type="text" id="name" placeholder="Your Name" required />
@@ -56,8 +57,9 @@
             />
             <select name="Car-type" id="carType" required>
               <option value="" selected disabled>Car Type</option>
-              <option value="SUV">SUV</option>
               <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+              <option value="10-seater">Tempo traveller</option>
             </select>
             <select name="Car-selection" id="carSelection" hidden>
               <option value="" selected disabled>Select Car Type First</option>
@@ -144,12 +146,25 @@
         </div>
         <div class="car-cards">
           <div class="car-card" data-type="sedan">
-            <img src="./Assets/images/dzire.avif" alt="Sedan Car" />
+            <img src="./Assets/images/dzire2.jpg" alt="Sedan Car" />
             <h3>Car Name: Swift dzire</h3>
             <p>Type: Sedan</p>
             <p>Seats: 4</p>
             <p>Features: AC, GPS, Music System</p>
             <p class="price">Cost: ₹12/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+          <div class="car-card" data-type="suv">
+            <img
+              src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif"
+              alt="SUV Car"
+            />
+            <h3>Car Name: Maruti Suzuki Ertiga</h3>
+            <p>Type: MUV</p>
+            <p>Seats: 6</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹14/km</p>
             <!-- Moved price below features -->
             <button class="book-now">Book Now</button>
           </div>
@@ -162,7 +177,7 @@
             <p>Type: SUV</p>
             <p>Seats: 7</p>
             <p>Features: AC, GPS, Music System, Sunroof</p>
-            <p class="price">Cost: ₹15/km</p>
+            <p class="price">Cost: ₹16/km</p>
             <!-- Moved price below features -->
             <button class="book-now">Book Now</button>
           </div>
@@ -192,23 +207,10 @@
             <!-- Moved price below features -->
             <button class="book-now">Book Now</button>
           </div>
-          <div class="car-card" data-type="suv">
-            <img
-              src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif"
-              alt="SUV Car"
-            />
-            <h3>Car Name: Maruti Suzuki Ertiga</h3>
-            <p>Type: SUV</p>
-            <p>Seats: 6</p>
-            <p>Features: AC, GPS, Music System, Sunroof</p>
-            <p class="price">Cost: ₹14/km</p>
-            <!-- Moved price below features -->
-            <button class="book-now">Book Now</button>
-          </div>
 
           <div class="car-card" data-type="10-seater">
             <img
-              src="Assets/images/mini-bus-rental-services-500x500_14-seater.webp"
+              src="Assets/images/download-11-seater.png"
               alt="Tempo traveller"
             />
             <h3>Car Name: Tempo Traveller (11 Seater)</h3>
@@ -222,7 +224,7 @@
 
           <div class="car-card" data-type="10-seater">
             <img
-              src="Assets/images/mini-bus-rental-services-500x500_14-seater.webp"
+              src="Assets/images/14 seater-removebg-preview.png"
               alt="Tempo traveller"
             />
             <h3>Car Name: Tempo Traveller (14 Seater)</h3>
@@ -236,7 +238,7 @@
 
           <div class="car-card" data-type="14-seater">
             <img
-              src="Assets/images/force-traveller-3050-van-500x500_11-seater.webp"
+              src="Assets/images/download-17-seater.png"
               alt="Tempo traveller"
             />
             <h3>Car Name: Tempo Traveller (17 Seater)</h3>
@@ -250,8 +252,8 @@
 
           <div class="car-card" data-type="14-seater">
             <img
-              src="Assets/images/force-traveller-3050-van-500x500_11-seater.webp"
-              alt="Tempo traveller"
+            src="Assets/images/download-20-seater.png"
+            alt="Tempo traveller"
             />
             <h3>Car Name: Tempo Traveller (20 Seater)</h3>
             <p>Type: tempo traveller</p>
