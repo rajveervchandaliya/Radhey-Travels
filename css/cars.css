@@ -118,8 +118,26 @@
     .car-card {
         width: 100%;
         max-width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
         /* min-height: 80vw; */
         /* height: 50vh; */
         /* justify-content: space-around; */
+    }
+    .car-card img {
+        height: 50%;
+    }
+    .car-card h3 {
+        font-size: 1.2rem;
+    }
+    .car-card p {
+        font-size: 0.9rem;
+    }
+    .book-now {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        width: 40%;
     }
 }
