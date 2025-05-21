@@ -53,7 +53,7 @@
 }
 .dark{
     height: 100%;
-     background-color:crimson;
+    background-color:crimson;
 }
 .about-card {
   flex: 1;
@@ -116,7 +116,9 @@
          
     }
     .about-card{
-        min-width: 80%;
+        min-width: 100%;
+        
+        
     }
     .aboutcards-container-2{
         width: 100%;

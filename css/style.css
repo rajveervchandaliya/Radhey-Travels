@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #4ED7F1; /* Blue for primary elements */
-  --secondary-color: #FFFA8D; /* Orange for accents */
+  --secondary-color: black; /* Orange for accents */
   --background-color: #f9f9f9; /* Light background */
   --text-color: #333; /* Dark text */
   --muted-text-color: #555; /* Muted text */
@@ -37,10 +37,28 @@
   background-color: var(--background-color);
   margin-top: 15vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
+.hero-content h1{
+  font-size: 3rem;
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--muted-text-color);
+  /* text-align: center; */
+}
+/* .hero-content br {
+  display: none;
+
+} */
 
 .hero-text {
   display: flex;
@@ -49,12 +67,12 @@
   gap: 1rem;
   padding: 10px;
 }
-
+/* 
 .hero-text h1 {
-  font-size: 2rem;
+  font-size: 5rem;
   text-align: center;
   margin: 0;
-}
+} */
 
 .hero-text p {
   font-size: 1.2rem;
@@ -69,11 +87,12 @@
   align-items: center;
   height: 100vh;
   text-align: center;
-  max-width: 40%;
+  max-width: 30%;
   flex-direction: column;
   gap: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px var(--shadow-color);
+  margin: 0;
 }
 
 .form-box {
@@ -82,11 +101,11 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 90%;
+  width: 100%;
 }
 
 .form-container h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -184,6 +203,14 @@
     gap: 1rem;
     align-items: center;
   }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+
+  }
+  
   .form-container {
     width: 80%;
     height: fit-content;
@@ -318,18 +345,27 @@
     width: 100vw;
   }
   .form-container {
-    padding: 0;
+    padding: 1rem 0; 
     margin: 1rem;
+    max-height: fit-content;
     min-width: 95vw;
     align-self: center;
-    border: 2px solid var(--primary-color);
+    /* border: 2px solid var(--primary-color); */
   }
+
+  .form-container h2 {
+    margin-top: 0;
+  }
+
+
 
   .form-box {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
+    /* border: 2px solid var(--primary-color); */
   }
 
   .form-container h2 {
@@ -341,5 +377,9 @@
   .form-container button {
     width: 90vw;
     font-size: 0.9rem;
+  }
+
+.hero-content br {
+    display:none;
   }
 }
