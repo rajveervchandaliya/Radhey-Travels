@@ -1,7 +1,7 @@
 .car-selection {
     padding: 1rem;
     background-color: #f9f9f9;
-    width: 80vw;
+    width: 90vw;
     text-align: center;
 }
 
@@ -36,7 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-transform: capitalize;
 }
@@ -100,6 +100,16 @@
   font-size: 1rem; /* Slightly larger font size */
   font-weight: bold; /* Make the text bold */
   margin-top: 0.5rem; /* Add spacing above the price */
+}
+
+@media screen and (min-width: 786px) and (max-width: 1460px) {
+    .car-cards{
+        width: 80vw;
+        justify-content: space-evenly;
+    }
+    .car-card{
+        width: 45%;
+    }
 }
 
 
