@@ -42,8 +42,9 @@
 }
 
 .about-card{
-    min-width: 45%;
-    /* height: 100%; */
+    /* width: 40%; */
+    min-width: 30%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +53,6 @@
     padding: 5%;
     /* background-color: transparent; */
     text-align: center;
-    height: 100%;
     /* margin-right: 10px; */
 }
 .dark{
@@ -60,8 +60,7 @@
     background-color:crimson;
 }
 .about-card {
-  flex: 1;
-  max-width: 30%; /* Ensure cards are evenly spaced */
+  flex: 1; 
   text-align: center;
   padding: 1.5rem;
   background-color: #fff;

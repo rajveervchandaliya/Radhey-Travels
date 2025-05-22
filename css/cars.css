@@ -107,6 +107,13 @@
         width: 80vw;
         justify-content: space-evenly;
     }
+    .filters{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .filter-button{
+        padding: 10px 20px;
+    }
     .car-card{
         width: 45%;
     }
