@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../Assets/font/BebasNeue-Regular.woff2") format("woff2"),
+    url("../Assets/font/BebasNeue-Regular.woff") format("woff"),
+    url("../Assets/font/BebasNeue-Regular.ttf") format("truetype");
+}
+.map {
+  height: 50vh; /* Ensure the map has a fixed height */
+  width: 100%;
+}
+.map iframe {
+  width: 100%;
+  height: 90%;
+  border: 0;
+  border-radius: 20px;
+}
+.abt-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  gap: 2rem; /* Adjusted gap for better spacing */
+  height: auto; /* Change from 100vh to auto to prevent fixed height */
+}
+.address p {
+  margin-bottom: 10px;
+  color: #555;
+}
+.address h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.part1,
+.part2 {
+  width: 100%; /* Ensure both parts take full width in column layout */
+}
+.part1 {
+  /* text-align: center; */
+  padding: 0 1%;
+  /* background-color: aquamarine; */
+  /* border-left: #333 solid 6px; */
+}
+.part2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%;
+  /* background-color: aquamarine; */
+  /* border-left: #333 solid 6px; */
+}
+.part1 > h3 {
+  font-size: 3.5rem; /* Adjust font size for better readability */
+  color: var(--primary-color);
+  font-family: "MyFont";
+}
+.part1 p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5; /* Add line height for better readability */
+}
+
+@media (min-width: 900px) {
+  .abt-container {
+    flex-direction: row; /* Switch to row layout for larger screens */
+    gap: 2rem; /* Adjust gap for better spacing */
+  }
+
+  .part1,
+  .part2 {
+    width: 50%; /* Split the container into two equal parts */
+  }
+
+  .part1 p {
+    font-size: 1.2rem; /* Increase font size for larger screens */
+  }
+
+  .map {
+    height: 100%; /* Ensure the map takes full height of its container */
+  }
+}

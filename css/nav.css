@@ -1,11 +1,17 @@
 .navbar {
-    background-color: #fff;
+    background-color: var(--white-color);
+    color: var(--text-color);
     padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-    position: relative;   /* for mobile */
+    position: fixed; /* Change from relative to fixed */
+    top: 0; /* Ensure it stays at the top */
+    left: 0;
+    width: 100%; /* Make it span the full width */
+    z-index: 10; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 5px var(--shadow-color); /* Optional: Add a shadow for better visibility */
 }
 
 .navbar .logo {
@@ -28,7 +34,7 @@
 .navbar .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #f9b542;
+    background-color:crimson;
     border-radius: 5px;
 }
 
@@ -44,7 +50,7 @@
     text-decoration: none;
     font-size: 1.3rem;
     transition: color 0.3s ease;
-    color: #f9b542;
+    color: var(--primary-color);
     font-weight: bold;
     padding: 5px 20px;
     border-radius: 30px;
@@ -52,9 +58,8 @@
 }
 
 .navbar .nav-links li a:hover {
-    color: #fff;
-    background-color: #f9b542;
-
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
 
 /* Mobile Styles */
@@ -72,15 +77,15 @@
         background-color: white;
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid gray;
     }
 
     .navbar .nav-links.active {
         display: flex;
         z-index: 5;
-        background: transparent;
+        background-color: white;
         backdrop-filter: blur(30px);
     }
-
     .navbar .nav-links li {
         text-align: center;
         padding: 1rem 0;

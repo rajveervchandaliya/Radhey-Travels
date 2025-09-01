@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/cars.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -22,57 +29,284 @@
         </div>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
-          <li><a href="#book">Cars</a></li>
-          <li><a href="#book">Booking</a></li>
+          <li><a href="#carSection">Cars</a></li>
+          <li><a href="#form">Booking</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#about">About Us</a></li>
         </ul>
       </header>
 
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="hero-content">
-          <h1>Wherever You Go, We're Already on the Way</h1>
+          <h1>
+            Wherever You Go,<br />
+            We're Already on the Way
+          </h1>
           <p>Your one-stop solution for all your needs.</p>
+          <div class="hero-btns">
+            <button class="book-now-btn">
+              <a href="#form" class="btn"
+                ><i class="ri-phone-fill"></i> Book by call</a
+              >
+            </button>
+            <button class="book-now-btn">
+              <a href="#form" class="btn"
+                ><i class="ri-whatsapp-line"></i> whatsapp us</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="form-container" id="form">
+          <h2>contact us</h2>
+          <form class="form-box" id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input
+              type="tel"
+              id="contactNumber"
+              maxlength="10"
+              placeholder="Contact Number"
+              required
+            />
+            <input
+              type="text"
+              id="pickupLocation"
+              placeholder="Destination"
+              required
+            />
+            <select name="Car-type" id="carType" required>
+              <option value="" selected disabled>Car Type</option>
+              <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+              <option value="10+-seater">Tempo Traveller</option>
+              <option value="bus">Bus</option>
+            </select>
+            <select name="Car-selection" id="carSelection" hidden>
+              <option value="" selected disabled>Select Car Type First</option>
+            </select>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
       <br />
-      <section class="car-selection" id="carSelection">
+      <section class="about">
+        <h3>WHY CHOOSE US</h3>
+        <div class="aboutcards-container-1">
+          <div class="about-card">
+            <img
+              src="./Assets/images/luxury.png"
+              alt="Luxury Experience Icon"
+              class="about-icon"
+            />
+            <h3>Luxury Experience at Taxi Rates</h3>
+            <p>
+              Feel like a VIP without paying extra. Premium rides, affordable
+              prices.
+            </p>
+          </div>
+          <div class="about-card">
+            <img
+              src="./Assets/images/on-time.png"
+              alt="On Time Icon"
+              class="about-icon"
+            />
+            <h3>Every Ride. On Time. Every Time.</h3>
+            <p>Punctuality is our promise. We reach before the clock does.</p>
+          </div>
+          <!-- <div class="about-card">
+      <img src="./Assets/images/comfort.png" alt="Comfort Icon" class="about-icon" />
+      <h3>✅ Zero Stress. 100% Comfort.</h3>
+      <p>Sit back and relax — your smooth, safe journey starts the moment you book.</p>
+    </div> -->
+          <div class="about-card">
+            <img
+              src="./Assets/images/car-clean.png"
+              alt="Sanitized Cars Icon"
+              class="about-icon"
+            />
+            <h3>Sanitized Cars. Every Single Day.</h3>
+            <p>
+              Your safety is our responsibility. Clean, fresh, and
+              hygiene-checked vehicles.
+            </p>
+          </div>
+          <div class="about-card">
+            <img
+              src="./Assets/images/booking.png"
+              alt="Direct Booking Icon"
+              class="about-icon"
+            />
+            <h3>Direct Booking, No Middlemen</h3>
+            <p>
+              Talk to us, book with us. No agents, no hidden charges — just
+              honest service.
+            </p>
+          </div>
+          <div class="about-card">
+            <img
+              src="./Assets/images/trust.png"
+              alt="Trusted Icon"
+              class="about-icon"
+            />
+            <h3>Trusted by Families, Corporates & Travellers Alike</h3>
+            <p>
+              From daily rides to special tours — everyone chooses Radhey
+              Travels with confidence.
+            </p>
+          </div>
+          <div class="about-card">
+            <img
+              src="./Assets/images/salary.png"
+              alt="Transparent Pricing Icon"
+              class="about-icon"
+            />
+            <h3>Transparent Pricing, No Surprises</h3>
+            <p>
+              What you see is what you pay — honest fares with zero hidden
+              costs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section class="car-selection" id="carSection">
         <h2>Choose Your Car</h2>
         <div class="filters">
           <button class="filter-button" data-filter="all">All</button>
           <button class="filter-button" data-filter="sedan">Sedan</button>
           <button class="filter-button" data-filter="suv">SUV</button>
-          <button class="filter-button" data-filter="10-seater">
-            10 Seaters
+          <button class="filter-button" data-filter="10+-seater">
+            10+ Seaters
           </button>
-          <button class="filter-button" data-filter="14-seater">
-            14+ Seaters
-          </button>
+          <button class="filter-button" data-filter="bus">Bus</button>
+
         </div>
         <div class="car-cards">
           <div class="car-card" data-type="sedan">
-            <img src="./images/sedan.jpg" alt="Sedan Car" />
-            <h3>Car Name: Honda City</h3>
+            <img src="./Assets/images/dzire2.jpg" alt="Sedan Car" />
+            <h3>Car Name: Swift dzire</h3>
             <p>Type: Sedan</p>
-            <p>Cost: ₹12/km</p>
             <p>Seats: 4</p>
             <p>Features: AC, GPS, Music System</p>
+            <p class="price">Cost: ₹12/km</p>
+            <!-- Moved price below features -->
             <button class="book-now">Book Now</button>
           </div>
           <div class="car-card" data-type="suv">
-            <img src="./images/suv.jpg" alt="SUV Car" />
-            <h3>Car Name: Toyota Fortuner</h3>
-            <p>Type: SUV</p>
-            <p>Cost: ₹15/km</p>
-            <p>Seats: 7</p>
+            <img
+              src="./Assets/images/ertiga-exterior-right-front-three-quarter-5.avif"
+              alt="SUV Car"
+            />
+            <h3>Car Name: Maruti Suzuki Ertiga</h3>
+            <p>Type: MUV</p>
+            <p>Seats: 6</p>
             <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹14/km</p>
+            <!-- Moved price below features -->
             <button class="book-now">Book Now</button>
           </div>
+          <div class="car-card" data-type="suv">
+            <img
+              src="./Assets/images/innova-6-plus1-500x500.webp"
+              alt="SUV Car"
+            />
+            <h3>Car Name: Toyota innova</h3>
+            <p>Type: SUV</p>
+            <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹16/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="suv">
+            <img
+              src="./Assets/images/Chevrolet-Tavera-Right-Front-Three-Quarter-49908_ol.webp"
+              alt="SUV Car"
+            />
+            <h3>Car Name: Chevrolet Tavera</h3>
+            <p>Type: SUV</p>
+            <p>Seats: 9</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹17/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="suv">
+            <img
+              src="./Assets/images/2016-Toyota-Innova-Crysta-5.avif"
+              alt="SUV Car"
+            />
+            <h3>Car Name: Toyota innova crysta</h3>
+            <p>Type: SUV</p>
+            <p>Seats: 7</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹18/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="10+-seater">
+            <img
+              src="Assets/images/download-11-seater.png"
+              alt="Tempo Traveller"
+            />
+            <h3>Car Name: Tempo Traveller (11 Seater)</h3>
+            <p>Type: Tempo Traveller</p>
+            <p>Seats: 11</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹23/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="10+-seater">
+            <img
+              src="Assets/images/14 seater-removebg-preview.png"
+              alt="Tempo Traveller"
+            />
+            <h3>Car Name: Tempo Traveller (14 Seater)</h3>
+            <p>Type: Tempo Traveller</p>
+            <p>Seats: 14</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹25/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="10+-seater">
+            <img
+              src="Assets/images/download-17-seater.png"
+              alt="Tempo Traveller"
+            />
+            <h3>Car Name: Tempo Traveller (17 Seater)</h3>
+            <p>Type: Tempo Traveller</p>
+            <p>Seats: 17</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹27/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
+          <div class="car-card" data-type="10+-seater">
+            <img
+              src="Assets/images/download-20-seater.png"
+              alt="Tempo Traveller"
+            />
+            <h3>Car Name: Tempo Traveller (20 Seater)</h3>
+            <p>Type: Tempo Traveller</p>
+            <p>Seats: 20</p>
+            <p>Features: AC, GPS, Music System, Sunroof</p>
+            <p class="price">Cost: ₹32/km</p>
+            <!-- Moved price below features -->
+            <button class="book-now">Book Now</button>
+          </div>
+
           <!-- Add more car cards as needed -->
         </div>
       </section>
       <br />
-      <section class="faq">
+      <section class="faq" id="faq">
         <h2>Frequently Asked Questions</h2>
         <div class="accordion">
           <div class="accordion-item">
@@ -120,43 +354,119 @@
         </div>
       </section>
       <br />
-      <section class="form-container">
-        <h2>Book Now</h2>
-        <form class="form-box" id="bookingForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <select name="Trip-type" id="tripType" required>
-            <option value="" selected disabled>Trip Type</option>
-            <option value="Round Trip">Round Trip</option>
-            <option value="One-Way-Trip">One-Way-Trip</option>
-          </select>
-          <input
-            type="tel"
-            id="contactNumber"
-            maxlength="10"
-            placeholder="Contact Number"
-            required
-          />
-          <select name="Car-type" id="carType" required>
-            <option value="" selected disabled>Car Type</option>
-            <option value="SUV">SUV</option>
-            <option value="Sedan">Sedan</option>
-          </select>
-          <input
-            type="text"
-            id="pickupLocation"
-            placeholder="Pickup Location"
-            required
-          />
-          <input
-            type="text"
-            id="dropLocation"
-            placeholder="Drop Location"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
+
+      <section class="abt-container" id="about">
+        <div class="part1">
+          <h3>About us</h3>
+          <p>
+            Radhey Travels is a leading travel agency in Ahmedabad, Gujarat,
+            specializing in providing top-notch travel services to our clients.
+            We offer a wide range of travel packages, including domestic and
+            international tours, hotel bookings, car rentals, and customized
+            travel solutions. Our team of experienced travel experts is
+            dedicated to ensuring that your travel experience is seamless and
+            enjoyable. Whether you're planning a family vacation, a business
+            trip, or a romantic getaway, Radhey Travels has got you covered with
+            our exceptional services and competitive prices.
+            <br /><br />
+          </p>
+          <h3>Why choose us ?</h3>
+          <p>
+            At Radhey Travels, we understand that travel is not just about
+            reaching a destination; it's about creating unforgettable memories.
+            That's why we go the extra mile to provide personalized services
+            tailored to your unique travel needs. Our commitment to customer
+            satisfaction, attention to detail, and extensive knowledge of the
+            travel industry set us apart from the competition. With Radhey
+            Travels, you can rest assured that your travel experience will be
+            nothing short of extraordinary.
+          </p>
+        </div>
+
+        <div class="part2">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.765432781142!2d72.6579052!3d23.032383300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e873cb8b46f3d%3A0x8fdb163cb68ffc38!2sRadhey%20Travels!5e0!3m2!1sen!2sin!4v1747043809320!5m2!1sen!2sin"
+              height="100%"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div id="address" style="line-height:1.7;">
+            <h3>Address:</h3>
+            <address>
+              15 Varahi Prathmik School,<br />
+              Opp. Amar Jyoti Bungalows,<br />
+              Near KP Heights,<br />
+              Nikol - Odhav Rd,<br />
+              Nikol, Odhav,<br />
+              Ahmedabad, Gujarat 382415
+            </address>
+            <h3>Contact:</h3>
+            <p>Phone: +91 90169 48963</p>
+            <br /><br />
+          </div>
+        </div>
       </section>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>
+            <img src="./Assets/images/" alt="Radhey Travels Logo" style="height:40px; vertical-align:middle;" />
+            Radhey Travels
+          </h4>
+          <p>
+            Your trusted travel partner for safe and reliable journeys. Explore
+            the world with us!
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#carSection">Cars</a></li>
+            <li><a href="#form">Booking</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Phone: +91 90169 48963</p>
+          <p>Email: info@radheytravels.com</p>
+          <address style="line-height:1.7;">
+            15 Varahi Prathmik School,<br />
+            Opp. Amar Jyoti Bungalows,<br />
+            Near KP Heights,<br />
+            Nikol - Odhav Rd,<br />
+            Nikol, Odhav,<br />
+            Ahmedabad, Gujarat 382415
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Radhey Travels. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Fixed Contact Buttons -->
+    <div class="fixed-contact-buttons">
+      <a href="tel:+919016948963" class="contact-btn call-btn">
+        <i class="ri-phone-fill"></i>
+        <span>Call Now</span>
+      </a>
+      <a
+        href="https://wa.me/919016948963?text=Hello! I would like to book a car."
+        class="contact-btn whatsapp-btn"
+      >
+        <i class="ri-whatsapp-fill"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
     <script src="./Scripts/booking.js"></script>
     <script src="./Scripts/navbar.js"></script>
     <script src="./Scripts/faq.js"></script>
