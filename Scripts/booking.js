@@ -1,23 +1,58 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Set minimum date to today for travel date input
+    const dateInput = document.getElementById('travelDate');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    }
+});
+
 document.getElementById('bookingForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
+    
     const name = document.getElementById('name').value;
     const contactNumber = document.getElementById('contactNumber').value;
+    const pickupAddress = document.getElementById('pickupAddress').value;
+    const destination = document.getElementById('pickupLocation').value;
+    const travelDate = document.getElementById('travelDate').value;
     const carType = document.getElementById('carType').value;
     const carSelection = document.getElementById('carSelection').value;
-    const pickupLocation = document.getElementById('pickupLocation').value;
+    
+    // Format the date for better readability
+    const formattedDate = new Date(travelDate).toLocaleDateString('en-IN', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    
+    // Create WhatsApp message
+    const message = `Hello! I would like to book a car:
+    
+Name: ${name}
+Contact: ${contactNumber}
+Pickup Address: ${pickupAddress}
+Destination: ${destination}
+Travel Date: ${formattedDate}
+Car Type: ${carType}
+${carSelection ? `Car Selected: ${carSelection}` : ''}
 
-    const message = `Hello, I would like to book a trip with the following details:
-- Name: ${name}
-- Contact Number: ${contactNumber}
-- Car Type: ${carType}
-- Car Selected: ${carSelection}
-- Destination: ${pickupLocation}`;
-
-    const ownerNumber = '919016948963'; // Replace with actual WhatsApp number
-
-    const whatsappURL = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
+Please confirm availability and provide booking details.`;
+    
+    // Encode the message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/919016948963?text=${encodedMessage}`;
+    
+    // Open WhatsApp
     window.open(whatsappURL, '_blank');
+    
+    // Show success message
+    alert('Thank you! Your booking request has been sent via WhatsApp.');
+    
+    // Optional: Reset form
+    this.reset();
+    document.getElementById('carSelection').hidden = true;
+    document.getElementById('carSelection').removeAttribute('required');
 });
 
 // Handle car filter buttons
